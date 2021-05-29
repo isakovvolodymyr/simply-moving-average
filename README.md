@@ -8,6 +8,8 @@ bash app.sh createDB
 
 bash app.sh up
 
+#Env variables in .env file
+
 #Swagger
 {apiDomain}/api/doc
 

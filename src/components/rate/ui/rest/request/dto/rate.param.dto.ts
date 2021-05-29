@@ -1,13 +1,14 @@
-import { IsEnum, IsNotEmpty, IsNumberString } from 'class-validator';
+import { IsEnum, IsNotEmpty } from 'class-validator';
+import { Type} from 'class-transformer';
 
 export enum PeriodType {
-    First = '7',
-    Second = '25',
-    Third = '99',
+    First = 7,
+    Second = 25,
+    Third = 99,
 }
 
 export class RateParamDTO {
-    @IsNumberString()
+    @Type(() => Number)
     @IsNotEmpty()
     @IsEnum(PeriodType)
     private period: number;
