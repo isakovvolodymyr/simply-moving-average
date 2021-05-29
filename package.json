@@ -14,7 +14,7 @@
     "start:nodemon": "nodemon",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/server",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "check:fmt": "prettier -l \"src/**/*.ts\" \"test/**/*.ts\"",
     "check:ts": "tsc -p tsconfig.check.json",

@@ -11,9 +11,8 @@ services:
       - "${APP_PORT}:3000"
     volumes:
       - ./:/usr/src/app
-      - ./node_modules:/usr/src/app/node_modules
-      - ./logs:/usr/src/app/logs
-    command: npm run start:nodemon
+      - /usr/src/app/node_modules
+    command: npm run start
     depends_on:
       - mysql
 
