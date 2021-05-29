@@ -1,9 +1,9 @@
-import {Controller, Get, HttpStatus, Inject, Param} from '@nestjs/common';
+import { Controller, Get, HttpStatus, Inject, Param } from '@nestjs/common';
 import {
     TraderStrategyService,
     TraderStrategyServiceSymbol
 } from '@app/components/rate/application/port/trader-strategy.service.interface';
-import {RateParamDTO} from '@app/components/rate/ui/rest/request/dto/rate.param.dto';
+import { RateParamDTO } from '@app/components/rate/ui/rest/request/dto/rate.param.dto';
 import {
     ApiBadRequestResponse,
     ApiInternalServerErrorResponse,
@@ -12,11 +12,11 @@ import {
     ApiTags,
     ApiUnprocessableEntityResponse
 } from '@nestjs/swagger';
-import {SwaggerErrorResponse} from '@app/commons/swagger/swagger.error.response';
+import { SwaggerErrorResponse } from '@app/commons/swagger/swagger.error.response';
 import ApiResponse from '@app/commons/response/api.response';
 import RateAverageViewModel from '@app/components/rate/ui/rest/view-model/rate-average.view-model';
-import {Item} from '@app/commons/response/item';
-import {RateAverageSwaggerResponseDTO} from '@app/components/rate/ui/rest/swagger/rate-average.swagger.response.dto';
+import { Item } from '@app/commons/response/item';
+import { RateAverageSwaggerResponseDTO } from '@app/components/rate/ui/rest/swagger/rate-average.swagger.response.dto';
 
 @Controller('rates')
 @ApiTags('rates')

@@ -1,5 +1,5 @@
-import {Rate} from '@app/components/rate/domain/model/rate.model';
-import {ConvertSymbolEnum} from '@app/components/rate/domain/model/convert-symbol.enum';
+import { Rate } from '@app/components/rate/domain/model/rate.model';
+import { ConvertSymbolEnum } from '@app/components/rate/domain/model/convert-symbol.enum';
 
 export const RateRepositorySymbol = Symbol('RateRepository');
 

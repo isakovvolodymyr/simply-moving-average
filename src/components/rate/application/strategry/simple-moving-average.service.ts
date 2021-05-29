@@ -1,6 +1,6 @@
-import {TraderStrategyService} from '@app/components/rate/application/port/trader-strategy.service.interface';
+import { TraderStrategyService } from '@app/components/rate/application/port/trader-strategy.service.interface';
 import RateService from '@app/components/rate/application/service/rate.service';
-import {ConvertSymbolEnum} from '@app/components/rate/domain/model/convert-symbol.enum';
+import { ConvertSymbolEnum } from '@app/components/rate/domain/model/convert-symbol.enum';
 import { BadRequestException } from '@nestjs/common';
 
 export default class SimpleMovingAverageService implements TraderStrategyService {

@@ -1,9 +1,9 @@
-import {IsEnum, IsNotEmpty, IsNumberString} from 'class-validator';
+import { IsEnum, IsNotEmpty, IsNumberString } from 'class-validator';
 
 export enum PeriodType {
-    First = "7",
-    Second = "25",
-    Third = "99",
+    First = '7',
+    Second = '25',
+    Third = '99',
 }
 
 export class RateParamDTO {

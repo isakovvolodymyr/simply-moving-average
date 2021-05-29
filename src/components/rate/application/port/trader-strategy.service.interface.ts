@@ -1,4 +1,3 @@
-
 export const TraderStrategyServiceSymbol = Symbol('TraderStrategyService');
 
 export interface TraderStrategyService {

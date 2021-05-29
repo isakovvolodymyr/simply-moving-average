@@ -1,4 +1,4 @@
-import {ConvertSymbolEnum} from '@app/components/rate/domain/model/convert-symbol.enum';
+import { ConvertSymbolEnum } from '@app/components/rate/domain/model/convert-symbol.enum';
 
 export class Rate {
     public constructor(

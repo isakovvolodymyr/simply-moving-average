@@ -1,4 +1,4 @@
-import {ConvertSymbolEnum} from '@app/components/rate/domain/model/convert-symbol.enum';
+import { ConvertSymbolEnum } from '@app/components/rate/domain/model/convert-symbol.enum';
 
 export default class CreateRateDTO {
     private constructor(private readonly rate: number, private readonly symbol: ConvertSymbolEnum) {

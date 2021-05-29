@@ -15,10 +15,15 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
+  it('/rates/{period} (GET) success', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/api/v1/rates/7')
       .expect(200)
-      .expect('Hello World!');
+  });
+
+  it('/rates/{period} (GET) validation error', () => {
+    return request(app.getHttpServer())
+        .get('/api/v1/rates/8')
+        .expect(422)
   });
 });
