@@ -1,4 +1,4 @@
-import * as WebSocket from "ws";
+import * as WebSocket from 'ws';
 
 export abstract class BaseWebSocketServer {
     protected readonly webSocket: WebSocket;
@@ -19,7 +19,11 @@ export abstract class BaseWebSocketServer {
     }
 
     protected onOpen(message: string): void {
-        this.webSocket.on('open', () => this.webSocket.send(message));
+        this.webSocket.on('open', () => this.sendMessage(message));
+    }
+    
+    protected sendMessage(message: string): void {
+        this.webSocket.send(message);
     }
     
     protected onClose(): void {

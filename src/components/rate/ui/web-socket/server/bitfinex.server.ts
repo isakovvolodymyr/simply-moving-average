@@ -7,7 +7,7 @@ import RateService from '@app/components/rate/application/service/rate.service';
 
 @Injectable()
 export class BitfinexServer extends BaseWebSocketServer {
-    private static readonly API_URL = 'wss://api-pub.bitfinex.com/ws/2';
+    private static API_URL = 'wss://api-pub.bitfinex.com/ws/2';
     
     public constructor(private readonly rateService: RateService) {
         super(BitfinexServer.API_URL, BitfinexServer.makeOpenMessage())
